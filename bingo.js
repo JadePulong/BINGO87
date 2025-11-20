@@ -24,6 +24,7 @@ async function biteof87() {
         freddy.currentTime = 0;
         music.muted = false
     };
+    bingoCard()
 }
 
 //win check
@@ -246,4 +247,5 @@ function tantos(id, classss){
         boxId.setAttribute('class', 'tantos')
     }
     console.log(classss)
+
 }
