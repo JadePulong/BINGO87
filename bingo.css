@@ -1,0 +1,144 @@
+@font-face {
+    font-family: LeckerliOne;
+    src: url(files/LeckerliOne-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: LeckerliOne;
+    color: rgb(194, 194, 248) ; 
+    -webkit-text-stroke: 1px rgb(34, 0, 61);
+}
+
+body{
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    margin: 0;
+    background: url(files/bg.gif) center no-repeat;
+    background-size: cover;
+}
+
+.whole{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.bingo{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bingoCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 80%;
+    width: 80%;
+    border: 10px rgb(70, 58, 80) ridge;
+    backdrop-filter: blur(10px);
+}
+
+.bingoCard > div{
+    display: flex;
+    height: 100%;
+    flex: 1;
+    flex-direction: column;
+}
+
+.bingoCard > div > div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bingoCard > div > div > button{
+    font-size: clamp(0.5vw,2.4vw,400px);
+    color: rgb(70, 58, 80);
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
+/* LEFT PANEL */
+.left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-right: 5%;
+    align-items: center;
+}
+
+.title{
+    margin-top: 4%;
+    height: 30%;
+    line-height: 0.1;
+    margin-bottom: -5%;
+}
+
+.title h1{
+    font-size: 6em;
+    text-align: center;
+}
+
+.title h2{
+    font-size: 1.4vw;
+    text-align: center;
+}
+
+.draw{
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(10px);
+    border: 10px rgb(70, 58, 80) ridge;
+    font-size: 8vw;
+    text-align: center;
+}
+
+.buttonss{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttonss > button{
+    height: 40%;
+    width: 40%;
+    border: none;
+    border-radius: 20px;
+    font-size: 2em;
+    background-color: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(10px);
+    border: 10px rgb(70, 58, 80) ridge;
+}
+
+.bingoCard > div > div > button.tantos{
+    background-color: rgba(83, 79, 79, 0.11);
+}
+
+.jumpscare{
+    position: fixed;          
+    top: 0;
+    left: 0;
+    width: 100vw;             
+    height: 100vh;            
+    object-fit: cover;        
+    z-index: 9999;            
+    display: none;            
+}
