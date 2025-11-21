@@ -20,7 +20,7 @@ body{
 }
 
 .mobileTitle{
-    display: flex;
+    display: none;
 }
 
 .whole{
@@ -250,3 +250,4 @@ body{
     }
 
 }
+
