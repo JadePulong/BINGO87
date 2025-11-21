@@ -1,9 +1,12 @@
+<!-- Dynamic Quiz App -->
+<!-- BY CHRISTIAN JADE PULONG & CHRISTIAN JOASH CARPENTERO -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bingo</title>
+    <title>BINGO 87</title>
     <link rel="stylesheet" href="bingo.css">
 </head>
 <body>
@@ -26,7 +29,6 @@
                     <div><button id="box5" onclick="tantos(this.id)"></button></div>
                 </div>      
                 
-
                 <!-- 2nd column -->
                 <div class="column2">
                     <div><button style=" font-size: clamp(0.8vw,4vw,400px); color: rgb(194, 194, 248) ; -webkit-text-stroke: 1px rgb(34, 0, 61);">I</button></div>
@@ -37,7 +39,6 @@
                     <div><button id="box10" onclick="tantos(this.id)"></button></div>
                 </div>
                 
-
                 <!-- 3rd column -->
                 <div class="column3">
                     <div><button style=" font-size: clamp(0.8vw,4vw,400px); color: rgb(194, 194, 248) ; -webkit-text-stroke: 1px rgb(34, 0, 61);">N</button></div>
@@ -48,7 +49,6 @@
                     <div><button id="box15" onclick="tantos(this.id)"></button></div>
                 </div>
                 
-
                 <!-- 4th column -->
                 <div class="column4">
                     <div><button style=" font-size: clamp(0.8vw,4vw,400px); color: rgb(194, 194, 248) ; -webkit-text-stroke: 1px rgb(34, 0, 61);">G</button></div>
@@ -59,7 +59,6 @@
                     <div><button id="box20" onclick="tantos(this.id)"></button></div>
                 </div>
                 
-
                 <!-- 5th column -->
                 <div class="column5">
                     <div><button style=" font-size: clamp(0.8vw,4vw,400px); color: rgb(194, 194, 248) ; -webkit-text-stroke: 1px rgb(34, 0, 61);">O</button></div>
@@ -82,9 +81,13 @@
                 <button onclick="drawNum()">DRAW</button>
             </div>
         </div>
+
+        <div class="win" id="win">
+            <h1>BINGO</h1>
+        </div>
     </div>
 
-    <audio src="files/piano.mp3"" autoplay loop id="music"></audio>
+    <audio src="files/piano.mp3" autoplay loop id="music"></audio>
     <video class="jumpscare" id="freddy">
         <source src="files/wasthatthebiteof87.mp4">
     </video>
@@ -92,5 +95,4 @@
     
     <script src="bingo.js"></script>
 </body>
-
 
