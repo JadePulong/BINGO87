@@ -19,6 +19,10 @@ body{
     background-size: cover;
 }
 
+.mobileTitle{
+    display: flex;
+}
+
 .whole{
     width: 100%;
     height: 100%;
@@ -195,7 +199,7 @@ body{
 
     .draw{
         width: 40%;
-        font-size: 20vw;
+        font-size: 10vw;
         margin-top: 5%;
         margin-bottom: 5%;
     }
@@ -210,7 +214,7 @@ body{
     .buttonss > button{
         width: 80%;
         height: 60px;
-        font-size: 6vw;
+        font-size: 4vw;
     }
 
     .bingo{
@@ -244,4 +248,5 @@ body{
         font-size: 6vw;        
         -webkit-text-stroke: 1px rgb(0, 0, 0);
     }
+
 }
