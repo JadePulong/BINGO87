@@ -6,7 +6,7 @@ console.log(win);
 let bingoScreen = document.getElementById("win");
 
 // FREDDY FAZBEAR JUMPSCARE MODE
-let wasThatTheBiteof87 = true;
+let wasThatTheBiteof87 = false;
 
 // rng function
 function random(min, max) {
@@ -257,3 +257,4 @@ function tantos(id, classss) {
     }
     console.log(classss);
 }
+
